@@ -1,0 +1,55 @@
+{
+  "app": {
+    "signingConfigs": [
+      {
+        "name": "default",
+        "type": "HarmonyOS",
+        "material": {
+          "certpath": "C:\\Users\\YueYue\\.ohos\\config\\default_integer_Bjv5kAn1snu6GlJEoArpWB3Tui0UntM3v0JSpzHHVDY=.cer",
+          "storePassword": "0000001BF85EE10D03FF3BD50A233805FB84E95989E42AA1B0C0C60DA00F4226E471D218C310029ACB118A",
+          "keyAlias": "debugKey",
+          "keyPassword": "0000001B1DA504D6767AD67374F77CA7CB05377FC215DC07FD60B03AE58727C50611C8D7D5690AC2EE1A7B",
+          "profile": "C:\\Users\\YueYue\\.ohos\\config\\default_integer_Bjv5kAn1snu6GlJEoArpWB3Tui0UntM3v0JSpzHHVDY=.p7b",
+          "signAlg": "SHA256withECDSA",
+          "storeFile": "C:\\Users\\YueYue\\.ohos\\config\\default_integer_Bjv5kAn1snu6GlJEoArpWB3Tui0UntM3v0JSpzHHVDY=.p12"
+        }
+      }
+    ],
+    "products": [
+      {
+        "name": "default",
+        "signingConfig": "default",
+        "compatibleSdkVersion": "5.0.0(12)",
+        "runtimeOS": "HarmonyOS",
+        "buildOption": {
+          "strictMode": {
+            "caseSensitiveCheck": true,
+            "useNormalizedOHMUrl": true
+          }
+        }
+      }
+    ],
+    "buildModeSet": [
+      {
+        "name": "debug",
+      },
+      {
+        "name": "release"
+      }
+    ]
+  },
+  "modules": [
+    {
+      "name": "entry",
+      "srcPath": "./entry",
+      "targets": [
+        {
+          "name": "default",
+          "applyToProducts": [
+            "default"
+          ]
+        }
+      ]
+    }
+  ]
+}
